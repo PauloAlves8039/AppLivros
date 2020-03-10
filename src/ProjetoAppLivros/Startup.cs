@@ -3,9 +3,14 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
+using ProjetoAppLivros.Context;
 
 namespace ProjetoAppLivros
 {
+    /// <summary>
+    /// Classe responsável por configurar o comportamento da aplicação.
+    /// </summary>
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -18,6 +23,12 @@ namespace ProjetoAppLivros
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            string connectionString = Configuration.GetConnectionString("ProjetoAppLivrosDbContext");
+            services.AddDbContext<ProjetoAppLivrosDbContext>((optBuilder) => 
+            {
+                optBuilder.UseSqlServer(connectionString);
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
