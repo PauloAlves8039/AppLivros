@@ -12,7 +12,10 @@ namespace ProjetoAppLivros.Models
 
         /// <value>Propriedade responsável por atribuir o título.</value>
         public string Titulo { get; set; }
-
+        
+        /// <value>Propriedade responsável por informar o autor.</value>
+        public string Autor { get; set; }
+        
         /// <value>Propriedade responsável por informar o gênero.</value>
         public string Genero { get; set; }
 
