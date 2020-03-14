@@ -7,3 +7,15 @@ function validarCampoPesquisa(){
         location.reload()
     }    
 }
+
+/**
+ * Função para limpar campos na view Create. 
+ */
+function limparCamposCriacao(){
+    document.getElementById('livroTitulo').value=''
+    document.getElementById('livroAutor').value=''
+    document.getElementById('livroGenero').value=''
+    document.getElementById('livroLancamento').value=''
+    document.getElementById('livroEditora').value=''
+    location.reload() 
+}
