@@ -46,7 +46,7 @@ namespace ProjetoAppLivros.Controllers
         /// Action responsável pela exibição dos detalhes de um livro.
         /// </summary>
         /// <param name="id">Identifica o registro a ser detalhado.</param>
-        /// <returns></returns>
+        /// <returns>View com com detalhes de livro.</returns>
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)

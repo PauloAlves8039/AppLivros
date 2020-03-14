@@ -9,7 +9,16 @@
 <p>
     <a asp-action="Create">Adicionar Novo Livro</a>
 </p>
-<table class="table">
+
+<form asp-controller="Livros" asp-action="Index" class="form-inline">
+    <p>
+        Título: <input type="text" name="titulo" id="pesquisarLivro" class="form-control">
+        <input type="submit" id="pesquisar" value="PESQUISAR" class="btn btn-info" onclick="validarCampoPesquisa()" />
+        <button id="limparCampo" class="btn btn-outline-dark">CANCELAR</button>
+    </p>
+</form>
+
+<table class="table table-striped table-light table-hover">
     <thead>
         <tr>
             <th>
@@ -57,3 +66,5 @@
 }
     </tbody>
 </table>
+
+<script src="~/js/site.js" asp-append-version="true"></script>

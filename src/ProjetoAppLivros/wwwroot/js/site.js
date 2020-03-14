@@ -1,4 +1,9 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
+﻿/**
+ * Função para validar campo de pesquisa na view Index. 
+ */
+function validarCampoPesquisa(){
+    if(document.getElementById('pesquisarLivro').value == ''){
+        alert("Por favor, preencha o campo de pesquisa!")
+        location.reload()
+    }    
+}
