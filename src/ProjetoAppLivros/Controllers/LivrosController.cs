@@ -1,9 +1,7 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ProjetoAppLivros.Context;
 using ProjetoAppLivros.Models;
@@ -32,9 +30,16 @@ namespace ProjetoAppLivros.Controllers
         /// Action responsável pela listagem dos livros cadastrados.
         /// </summary>
         /// <returns>View com lista de livros inseridos.</returns>
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string titulo)
         {
-            return View(await _context.Livros.ToListAsync());
+            var livros = from l in _context.Livros select l;
+
+            if(!String.IsNullOrEmpty(titulo))
+            {
+                livros = livros.Where(l => l.Titulo.Contains(titulo));
+            }
+
+            return View(await livros.ToListAsync());
         }
 
         /// <summary>
