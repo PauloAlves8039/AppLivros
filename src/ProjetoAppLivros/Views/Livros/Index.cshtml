@@ -14,7 +14,7 @@
     <p>
         Título: <input type="text" name="titulo" id="pesquisarLivro" class="form-control">
         <input type="submit" id="pesquisar" value="PESQUISAR" class="btn btn-info" onclick="validarCampoPesquisa()" />
-        <button id="limparCampo" class="btn btn-outline-dark">CANCELAR</button>
+        <button id="limparCampo" class="btn btn-outline-dark" onclick="limparCampoPesquisa()">CANCELAR</button>
     </p>
 </form>
 
@@ -67,4 +67,6 @@
     </tbody>
 </table>
 
-<script src="~/js/site.js" asp-append-version="true"></script>
+@section Scripts {
+    <script src="~/js/site.js" asp-append-version="true"></script>
+}

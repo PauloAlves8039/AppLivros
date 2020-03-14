@@ -9,6 +9,14 @@ function validarCampoPesquisa(){
 }
 
 /**
+ * Função para limpar campo de pesquisa de livro. 
+ */
+function limparCampoPesquisa(){
+    document.getElementById('pesquisarLivro').value=''
+    location.reload()  
+}
+
+/**
  * Função para limpar campos na view Create. 
  */
 function limparCamposCriacao(){
