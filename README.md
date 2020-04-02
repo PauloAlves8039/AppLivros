@@ -15,28 +15,43 @@ Projeto teve sua estrutura desenvolvida com base na documentação da Microsoft 
 - Javascript
 
 # Dependências
-`> dotnet add package Microsoft.EntityFrameworkCore --version 3.1.2`
+```
+dotnet add package Microsoft.EntityFrameworkCore --version 3.1.2
+```
+```
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 3.1.2
+```
+```
+dotnet add package Microsoft.EntityFrameworkCore.Tools.DotNet --version 2.0.3
+```
+```
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 3.1.2
+```
+```
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 3.1.1
+```
+```
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Tools --version 2.0.4
+```
+# Comandos usados no projeto
 
-`> dotnet add package Microsoft.EntityFrameworkCore.Design --version 3.1.2`
+### Criando o projeto
+```
+dotnet new mvc -o ProjetoAppLivros --framework netcoreapp3.1
+```
 
-`> dotnet add package Microsoft.EntityFrameworkCore.Tools.DotNet --version 2.0.3`
+### Criação do controller Livros com scaffolding
+```
+dotnet aspnet-codegenerator controller -name LivrosController --model ProjetoAppLivros.Models.Livro --dataContext ProjetoAppLivros.Context.ProjetoAppLivrosDbContext --relativeFolderPath Controllers --useDefaultLayout
+```
 
-`> dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 3.1.2`
-
-`> dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 3.1.1`
-
-`> dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Tools --version 2.0.4`
-
-# Comando de criação do projeto
-`> dotnet new mvc -o ProjetoAppLivros --framework netcoreapp3.1`
-
-# Comando de criação do controller Livros com scaffolding
-`> dotnet aspnet-codegenerator controller -name LivrosController --model ProjetoAppLivros.Models.Livro --dataContext ProjetoAppLivros.Context.ProjetoAppLivrosDbContext --relativeFolderPath Controllers --useDefaultLayout`
-
-# Migrations Utilizadas
-`> dotnet ef migrations add MigracaoInicial`
-
-`> dotnet ef database update`
+### Migrations Utilizadas
+```
+dotnet ef migrations add MigracaoInicial
+```
+```
+dotnet ef database update
+```
 
 # Screenshot
 <html lang="pt-br">
