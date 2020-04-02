@@ -1,10 +1,19 @@
+[![VSCode](https://img.shields.io/badge/VSCode-v1.43-%2300BFFF)](https://code.visualstudio.com/)
+[![ASPNETCoreMvc](https://img.shields.io/badge/ASP.NET%20Core%20MVC-v3.1-blue)](https://docs.microsoft.com/pt-br/aspnet/core/mvc/overview?view=aspnetcore-3.1)
+[![EFCore](https://img.shields.io/badge/EntityFrameworkCore-v3.1-orange)](
+https://docs.microsoft.com/pt-br/ef/core/)
+[![Bootstrap4](https://img.shields.io/badge/Bootstrap-v4.3.1-blueviolet)](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
+[![SQLServer](https://img.shields.io/badge/SqlServer-v12.0-brightgreen)](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads)
+
+***
+
 # AppLivros
 Repositório de uma aplicação web desenvolvida para fins didáticos, com o objetivo de catalogar uma lista livros utilizando de recursos
 para adicionar, pesquisar, atualizar e excluir registros em um banco de dados.
  
 Projeto teve sua estrutura desenvolvida com base na documentação da Microsoft [Criar um aplicativo Web com o ASP.NET Core MVC](https://docs.microsoft.com/pt-br/aspnet/core/tutorials/first-mvc-app/?view=aspnetcore-3.0).
 
-# Especificações
+# Recursos Utilizados
 - Visual Studio Code v1.43.0
 - Microsoft SQL Server Management Studio versão 12.0.4100.1
 - Linguagem C#
@@ -52,13 +61,6 @@ dotnet ef migrations add MigracaoInicial
 ```
 dotnet ef database update
 ```
-
 # Screenshot
-<html lang="pt-br">
-<head>
-</head>
-<body>
-	<img src="https://github.com/PauloAlves8039/AppLivros/blob/master/src/ProjetoAppLivros/wwwroot/images/screenshot.png" />
-</body>
-</html>
+![Screenshot](https://github.com/PauloAlves8039/AppLivros/blob/master/src/ProjetoAppLivros/wwwroot/images/screenshot.png)
 
