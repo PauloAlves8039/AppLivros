@@ -1,13 +1,13 @@
-[![VSCode](https://img.shields.io/badge/VSCode-v1.43-%2300BFFF)](https://code.visualstudio.com/)
-[![ASPNETCoreMvc](https://img.shields.io/badge/ASP.NET%20Core%20MVC-v3.1-blue)](https://docs.microsoft.com/pt-br/aspnet/core/mvc/overview?view=aspnetcore-3.1)
-[![EFCore](https://img.shields.io/badge/EntityFrameworkCore-v3.1-orange)](
-https://docs.microsoft.com/pt-br/ef/core/)
-[![Bootstrap4](https://img.shields.io/badge/Bootstrap-v4.3.1-blueviolet)](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
-[![SQLServer](https://img.shields.io/badge/SqlServer-v12.0-brightgreen)](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads)
+<p align="center">
+  <a href="https://code.visualstudio.com/"><img src="https://img.shields.io/badge/VSCode-v1.43-%2300BFFF"></a>
+  <a href="https://docs.microsoft.com/pt-br/aspnet/core/mvc/overview?view=aspnetcore-3.1"><img     src="https://img.shields.io/badge/ASP.NET%20Core%20MVC-v3.1-blue"></a>
+  <a https://docs.microsoft.com/pt-br/ef/core/"><img src="https://img.shields.io/badge/EntityFrameworkCore-v3.1-orange"></a>
+  <a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/"><img src="https://img.shields.io/badge/Bootstrap-v4.3.1-blueviolet"></a>
+  <a href="https://www.microsoft.com/pt-br/sql-server/sql-server-downloads"><img src="https://img.shields.io/badge/SqlServer-v12.0-brightgreen"></a>
+</p>
 
-***
+<h1 align="center">AppLivros</h1>
 
-# AppLivros
 Repositório de uma aplicação web desenvolvida para fins didáticos, com o objetivo de catalogar uma lista livros utilizando de recursos
 para adicionar, pesquisar, atualizar e excluir registros em um banco de dados.
  
