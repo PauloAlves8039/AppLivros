@@ -6,14 +6,15 @@
   <a href="https://www.microsoft.com/pt-br/sql-server/sql-server-downloads"><img src="https://img.shields.io/badge/SqlServer-v12.0-brightgreen"></a>
 </p>
 
-<h1 align="center">AppLivros</h1>
+<h1 align="center">:books: AppLivros</h1>
 
+## :computer: Projeto
 Repositório de uma aplicação web desenvolvida para fins didáticos, com o objetivo de catalogar uma lista livros utilizando de recursos
 para adicionar, pesquisar, atualizar e excluir registros em um banco de dados.
  
 Projeto teve sua estrutura desenvolvida com base na documentação da Microsoft [Criar um aplicativo Web com o ASP.NET Core MVC](https://docs.microsoft.com/pt-br/aspnet/core/tutorials/first-mvc-app/?view=aspnetcore-3.0).
 
-# Recursos Utilizados
+## :rocket: Recursos Utilizados
 - Visual Studio Code v1.43.0
 - Microsoft SQL Server Management Studio versão 12.0.4100.1
 - Linguagem C#
@@ -23,7 +24,7 @@ Projeto teve sua estrutura desenvolvida com base na documentação da Microsoft 
 - Bootstrap v4.3.1
 - Javascript
 
-# Dependências
+## :blue_book: Dependências
 ```
 dotnet add package Microsoft.EntityFrameworkCore --version 3.1.2
 ```
@@ -42,7 +43,7 @@ dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 3.
 ```
 dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Tools --version 2.0.4
 ```
-# Comandos usados no projeto
+## :green_book: Comandos usados no projeto
 
 ### Criando o projeto
 ```
@@ -54,13 +55,13 @@ dotnet new mvc -o ProjetoAppLivros --framework netcoreapp3.1
 dotnet aspnet-codegenerator controller -name LivrosController --model ProjetoAppLivros.Models.Livro --dataContext ProjetoAppLivros.Context.ProjetoAppLivrosDbContext --relativeFolderPath Controllers --useDefaultLayout
 ```
 
-### Migrations Utilizadas
+### :ledger: Migrations Utilizadas
 ```
 dotnet ef migrations add MigracaoInicial
 ```
 ```
 dotnet ef database update
 ```
-# Screenshot
+## :camera: Screenshot
 ![Screenshot](https://github.com/PauloAlves8039/AppLivros/blob/master/src/ProjetoAppLivros/wwwroot/images/screenshot.png)
 
