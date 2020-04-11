@@ -24,6 +24,9 @@ Projeto teve sua estrutura desenvolvida com base na documentação da Microsoft 
 - Bootstrap v4.3.1
 - Javascript
 
+## :floppy_disk: Clonar repositório
+Baixar repositório ```git clone https://github.com/PauloAlves8039/AppLivros.git```
+
 ## :blue_book: Dependências
 ```
 dotnet add package Microsoft.EntityFrameworkCore --version 3.1.2
@@ -65,3 +68,5 @@ dotnet ef database update
 ## :camera: Screenshot
 ![Screenshot](https://github.com/PauloAlves8039/AppLivros/blob/master/src/ProjetoAppLivros/wwwroot/images/screenshot.png)
 
+## Author
+:computer: [Paulo Alves](https://github.com/PauloAlves8039)
