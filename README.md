@@ -1,3 +1,5 @@
+<h1 align="center">:books: AppLivros</h1>
+
 <p align="center">
   <a href="https://code.visualstudio.com/"><img src="https://img.shields.io/badge/VSCode-v1.43-%2300BFFF"></a>
   <a href="https://docs.microsoft.com/pt-br/aspnet/core/mvc/overview?view=aspnetcore-3.1"><img     src="https://img.shields.io/badge/ASP.NET%20Core%20MVC-v3.1-blue"></a>
@@ -5,8 +7,6 @@
   <a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/"><img src="https://img.shields.io/badge/Bootstrap-v4.3.1-blueviolet"></a>
   <a href="https://www.microsoft.com/pt-br/sql-server/sql-server-downloads"><img src="https://img.shields.io/badge/SqlServer-v12.0-brightgreen"></a>
 </p>
-
-<h1 align="center">:books: AppLivros</h1>
 
 ## :computer: Projeto
 Repositório de uma aplicação web desenvolvida para fins didáticos, com o objetivo de catalogar uma lista livros utilizando de recursos
